@@ -11,3 +11,9 @@ def disemvowel(str)
   return neutralized.join
 end
 
+
+# REFACTOR:
+def disemvowel(str)
+  vowels = 'aeiou'
+  str.delete(vowels + vowels.upcase)
+end
